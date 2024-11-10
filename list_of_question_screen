@@ -1,0 +1,250 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAD7A0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #F5CBA7;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #D35400;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .welcome {
+            padding: 10px;
+            font-size: 18px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #F5CBA7;
+            float: left;
+            padding: 10px;
+            border-right: 2px solid #D35400;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+            background-color: #FAD7A0;
+            border: 1px solid #D35400;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #D35400;
+            color: white;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 10px;
+        }
+        .breadcrumb {
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: blue;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .instructions {
+            color: red;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .buttons {
+            margin: 10px 0;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #D5DBDB;
+            border: 1px solid #AAB7B8;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #AAB7B8;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #D35400;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #F5CBA7;
+        }
+        .checkbox {
+            text-align: center;
+        }
+        .checkbox input {
+            margin: 0;
+        }
+        .edit, .delete {
+            cursor: pointer;
+        }
+        .edit:hover, .delete:hover {
+            color: #D35400;
+        }
+        .logout {
+            float: right;
+            padding: 10px;
+            background-color: #D5DBDB;
+            border: 1px solid #AAB7B8;
+            cursor: pointer;
+        }
+        .logout:hover {
+            background-color: #AAB7B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+    </div>
+    <div class="welcome">
+        Welcome Madhura..
+        <button class="logout">Logout</button>
+    </div>
+    <div class="sidebar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT SCHOOL</a>
+        <a href="#">COURSES</a>
+        <a href="#">TESTS</a>
+        <a href="#">USERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">List Of Questions</a> > sample
+        </div>
+        <div class="instructions">
+            Choose which questions to be displayed and then click on save test
+        </div>
+        <div class="buttons">
+            <button>Add Question</button>
+            <button>Save Test</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Question</th>
+                        <th>Type</th>
+                        <th>Choice A</th>
+                        <th>Choice B</th>
+                        <th>Choice C</th>
+                        <th>Choice D</th>
+                        <th>Correct Answer</th>
+                        <th>Marks</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" checked></td>
+                        <td>question 1</td>
+                        <td>MCQ</td>
+                        <td>option 1</td>
+                        <td>option 2</td>
+                        <td>option 3</td>
+                        <td>option 4</td>
+                        <td>B</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" checked></td>
+                        <td>question 2</td>
+                        <td>TF</td>
+                        <td>TRUE</td>
+                        <td>FALSE</td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox"></td>
+                        <td>question 3</td>
+                        <td>TF</td>
+                        <td>TRUE</td>
+                        <td>FALSE</td>
+                        <td></td>
+                        <td></td>
+                        <td>B</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox"></td>
+                        <td>question 4</td>
+                        <td>TF</td>
+                        <td>TRUE</td>
+                        <td>FALSE</td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox"></td>
+                        <td>question 5</td>
+                        <td>TF</td>
+                        <td>TRUE</td>
+                        <td>FALSE</td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox"></td>
+                        <td>question 6</td>
+                        <td>TF</td>
+                        <td>TRUE</td>
+                        <td>FALSE</td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>1</td>
+                        <td class="edit"><i class="fas fa-pencil-alt"></i></td>
+                        <td class="delete"><i class="fas fa-times"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
