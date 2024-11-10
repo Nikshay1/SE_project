@@ -1,1 +1,148 @@
-
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 10px;
+            border-bottom: 1px solid #000;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .logout {
+            float: right;
+            margin-top: -40px;
+            margin-right: 20px;
+        }
+        .logout button {
+            background-color: #d3d3d3;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .welcome {
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4a460;
+            padding: 10px;
+            border-right: 1px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+        .sidebar a:hover {
+            background-color: #d3d3d3;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .breadcrumb {
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #0000ff;
+        }
+        .form-container {
+            background-color: #f4a460;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form-container input[type="text"],
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000;
+        }
+        .form-container input[type="checkbox"] {
+            margin-left: 10px;
+        }
+        .form-container .buttons {
+            margin-top: 20px;
+        }
+        .form-container .buttons button {
+            background-color: #d3d3d3;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="welcome">
+        Welcome Madhura..
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT SCHOOL</a>
+            <a href="#">COURSES</a>
+            <a href="#">TESTS</a>
+            <a href="#">USERS</a>
+            <a href="#">EVENTS</a>
+            <a href="#">SETTINGS</a>
+        </div>
+        <div class="content">
+            <div class="breadcrumb">
+                <a href="#">Home</a> > Add New Test > Test Form
+            </div>
+            <div class="form-container">
+                <h2>Add New Test</h2>
+                <label for="question">*Question:</label>
+                <textarea id="question" rows="4"></textarea>
+                <label for="question-type">*Type Of Question:</label>
+                <select id="question-type">
+                    <option>Multiple Choice Question</option>
+                </select>
+                <label>Options: Mark the correct option</label>
+                <label>A] <input type="text"> <input type="checkbox"></label>
+                <label>B] <input type="text"> <input type="checkbox"></label>
+                <label>C] <input type="text"> <input type="checkbox"></label>
+                <label>D] <input type="text"> <input type="checkbox"></label>
+                <label for="answer-explanation">*Answer Explanation:</label>
+                <textarea id="answer-explanation" rows="4"></textarea>
+                <div class="buttons">
+                    <button>Save & Add Next Question</button>
+                    <button>Save Test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
