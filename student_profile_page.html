@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+        }
+        .welcome {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .logout {
+            float: right;
+            margin-top: -40px;
+            margin-right: 10px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #deb887;
+            float: left;
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .sidebar a:hover {
+            background-color: #cdaa7d;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            color: blue;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .profile-header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .personal-info, .activities {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .personal-info h3, .activities h3 {
+            margin-top: 0;
+        }
+        .activities table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .activities table, .activities th, .activities td {
+            border: 1px solid #000;
+        }
+        .activities th, .activities td {
+            padding: 8px;
+            text-align: left;
+        }
+        .activities a {
+            color: blue;
+            text-decoration: none;
+        }
+        .activities a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Online Exam System
+        <button class="logout">Logout</button>
+    </div>
+    <div class="welcome">
+        Welcome ADMIN
+    </div>
+    <div class="sidebar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT SCHOOL</a>
+        <a href="#">COURSES</a>
+        <a href="#">USERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="#">Home</a> &gt; <a href="#">Users</a> &gt; <a href="#">List Of Faculties</a> &gt; Anjali..
+        </div>
+        <div class="profile-header">
+            Anjali..
+        </div>
+        <div class="personal-info">
+            <h3>Personal Information:</h3>
+            <p>First Name: Anjali..</p>
+            <p>Last Name: Roy</p>
+            <p>Email Address: madhura.pradhan91@gmail.com</p>
+            <p>Date Of Birth: 06/03/2013</p>
+            <p>Country: India</p>
+            <p>City: thane</p>
+            <p>Zip: 400601</p>
+            <p>Contact Number: 8080517244</p>
+        </div>
+        <div class="activities">
+            <h3>Activities</h3>
+            <table>
+                <tr>
+                    <th>Test Name</th>
+                    <th>Status</th>
+                    <th>View Score</th>
+                </tr>
+                <tr>
+                    <td>test 1</td>
+                    <td>Pending</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>Economics</td>
+                    <td>Completed</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>sample</td>
+                    <td>Completed</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>new test</td>
+                    <td>Completed</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>dscx</td>
+                    <td>Pending</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
