@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .logout {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .logout button {
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+        .welcome {
+            margin: 20px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 10px;
+            border-right: 1px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .events {
+            margin-top: 20px;
+        }
+        .events ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .events ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="welcome">
+        Welcome Anjali..
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT SCHOOL</a>
+            <a href="#">COURSES</a>
+            <a href="#">TESTS</a>
+            <a href="#">EVENTS</a>
+            <a href="#">SETTINGS</a>
+        </div>
+        <div class="content">
+            <h2>Available Tests</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Test Name</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">test 1</a></td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Economics</a></td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">sample</a></td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">new test</a></td>
+                        <td>Completed</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><a href="#">event1</a></li>
+                    <li><a href="#">event 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
