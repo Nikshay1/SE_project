@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4a460;
+            padding: 10px;
+            float: left;
+            border-right: 1px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #e9967a;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .content .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .content .breadcrumb a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        .content .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content .form-container {
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #f4a460;
+        }
+        .content .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .content .form-container input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+        }
+        .content .form-container .buttons {
+            text-align: right;
+        }
+        .content .form-container .buttons input {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: 1px solid #000;
+            background-color: #d3d3d3;
+            cursor: pointer;
+        }
+        .content .form-container .buttons input:hover {
+            background-color: #c0c0c0;
+        }
+        .logout {
+            text-align: right;
+            padding: 10px;
+        }
+        .logout input {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            background-color: #d3d3d3;
+            cursor: pointer;
+        }
+        .logout input:hover {
+            background-color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+    </div>
+    <div class="sidebar">
+        <p>Welcome ADMIN</p>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT SCHOOL</a>
+        <a href="#">COURSES</a>
+        <a href="#">USERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="#">Home</a> > About School
+        </div>
+        <div class="form-container">
+            <h2>School Information:</h2>
+            <label for="school-name">School Name:</label>
+            <input type="text" id="school-name" name="school-name">
+            <label for="school-address">School Address:</label>
+            <input type="text" id="school-address" name="school-address">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip">
+            <label for="school-email">School Email Id:</label>
+            <input type="text" id="school-email" name="school-email">
+            <label for="contact-number">Contact Number:</label>
+            <input type="text" id="contact-number" name="contact-number">
+            <div class="buttons">
+                <input type="button" value="Save Changes">
+                <input type="button" value="Cancel">
+            </div>
+        </div>
+    </div>
+    <div class="logout">
+        <input type="button" value="Logout">
+    </div>
+</body>
+</html>
