@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            background-color: #f4a460;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: #f4a460;
+        }
+        .header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logout {
+            text-align: right;
+        }
+        .logout button {
+            background-color: #d3d3d3;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .test-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .question-container {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .question-header .timer {
+            border: 1px solid #000;
+            padding: 5px;
+            background-color: #fff;
+            color: #ff0000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .question-header .total-marks {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .question-body {
+            margin-top: 10px;
+        }
+        .question-body .marks {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .question-body .question-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .answer-choices {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .answer-choices label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .next-button {
+            text-align: center;
+        }
+        .next-button button {
+            background-color: #d3d3d3;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Online Exam System</div>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+        <div class="test-title">test 1</div>
+        <div class="question-container">
+            <div class="question-header">
+                <div class="question-number">Question 1 of 3</div>
+                <div class="timer">59:54</div>
+                <div class="total-marks">Total Marks: 6</div>
+            </div>
+            <div class="question-body">
+                <div class="marks">Marks: 2</div>
+                <div class="question-text">question 1</div>
+                <div class="answer-choices">
+                    Answer Choices
+                    <label><input type="radio" name="answer" value="A"> A] option 1</label>
+                    <label><input type="radio" name="answer" value="B"> B] option 2</label>
+                    <label><input type="radio" name="answer" value="C"> C] option 3</label>
+                    <label><input type="radio" name="answer" value="D"> D] option 4</label>
+                </div>
+            </div>
+        </div>
+        <div class="next-button">
+            <button>Next</button>
+        </div>
+    </div>
+</body>
+</html>
