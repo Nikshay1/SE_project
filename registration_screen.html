@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f4a460;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .mandatory {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 200px;
+            padding: 5px;
+        }
+        .form-group .mandatory-field {
+            color: red;
+        }
+        .submit-btn {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #d3d3d3;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Exam System</h1>
+        <p class="mandatory">The fields marked <span class="mandatory-field">•</span> are mandatory.</p>
+        
+        <div class="section">
+            <div class="section-title">User Information:</div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Category:</label>
+                <select>
+                    <option>Faculty</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Personal Information:</div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Gender:</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>First Name:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Last Name:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Date Of Birth:</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Country:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>City:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Zip:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Contact Number:</label>
+                <input type="text">
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Login Information:</div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Email Id:</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Confirm Email Id:</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Username:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Password:</label>
+                <input type="password">
+            </div>
+            <div class="form-group">
+                <label><span class="mandatory-field">•</span>Confirm Password:</label>
+                <input type="password">
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Security Information:</div>
+            <div class="form-group">
+                <label>Security Question:</label>
+                <select>
+                    <option>None</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Answer:</label>
+                <input type="text">
+            </div>
+        </div>
+        
+        <button class="submit-btn">Submit</button>
+    </div>
+</body>
+</html>
