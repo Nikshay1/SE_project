@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .logout button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .welcome {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4a460;
+            padding: 10px;
+            border-right: 2px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            border-bottom: 1px solid #000;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        .courses, .events {
+            margin-top: 20px;
+        }
+        .courses ul, .events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .courses li, .events li {
+            margin-bottom: 10px;
+        }
+        .courses a, .events a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+        .courses a:hover, .events a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="welcome">
+        Welcome Madhura..
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT SCHOOL</a>
+            <a href="#">COURSES</a>
+            <a href="#">TESTS</a>
+            <a href="#">USERS</a>
+            <a href="#">EVENTS</a>
+            <a href="#">SETTINGS</a>
+        </div>
+        <div class="content">
+            <div class="courses">
+                <h2>My Courses</h2>
+                <ul>
+                    <li><a href="#">course 1</a></li>
+                    <li><a href="#">course 2</a></li>
+                    <li><a href="#">Software Testingg</a></li>
+                </ul>
+            </div>
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><a href="#">event1</a></li>
+                    <li><a href="#">event 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
