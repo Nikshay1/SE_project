@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header .logout {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .header .logout button {
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4a460;
+            padding: 10px;
+            float: left;
+            border-right: 2px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 5px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 10px;
+        }
+        .content h2 {
+            font-size: 24px;
+        }
+        .breadcrumb {
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #0000ff;
+        }
+        .table-container {
+            border: 2px solid #000;
+            padding: 10px;
+            background-color: #f4a460;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4a460;
+        }
+        .fa-user-plus, .fa-check-circle, .fa-times-circle, .fa-times {
+            font-size: 20px;
+        }
+        .fa-check-circle {
+            color: green;
+        }
+        .fa-times-circle {
+            color: red;
+        }
+        .fa-times {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT SCHOOL</a>
+        <a href="#">COURSES</a>
+        <a href="#">USERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    <div class="content">
+        <h2>Welcome ADMIN</h2>
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">Users</a> > List Of Faculties
+        </div>
+        <div class="table-container">
+            <h2>List Of Faculties</h2>
+            <table>
+                <tr>
+                    <th>Faculty Name</th>
+                    <th>Add</th>
+                    <th>Active/Inactive</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td><a href="#">Madhura..</a></td>
+                    <td><i class="fas fa-user-plus"></i></td>
+                    <td><i class="fas fa-check-circle"></i></td>
+                    <td>Added</td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Mitalee</a></td>
+                    <td><i class="fas fa-user-plus"></i></td>
+                    <td><i class="fas fa-check-circle"></i></td>
+                    <td>Added</td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Devashish</a></td>
+                    <td><i class="fas fa-user-plus"></i></td>
+                    <td><i class="fas fa-times-circle"></i></td>
+                    <td>Added</td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+                <tr>
+                    <td><a href="#">dscfs</a></td>
+                    <td><i class="fas fa-user-plus"></i></td>
+                    <td><i class="fas fa-check-circle"></i></td>
+                    <td>Not Added</td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
