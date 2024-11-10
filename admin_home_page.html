@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4a460;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f4a460;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .logout button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4a460;
+            padding: 20px;
+            float: left;
+            border-right: 2px solid #000;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4a460;
+            font-weight: bold;
+        }
+        .edit, .delete {
+            text-align: center;
+        }
+        .edit a, .delete a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .edit a {
+            color: #000;
+        }
+        .delete a {
+            color: red;
+        }
+        .add-course {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .add-course button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Online Exam System</h1>
+        <div class="logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT SCHOOL</a>
+        <a href="#">COURSES</a>
+        <a href="#">USERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    <div class="content">
+        <h2>Welcome ADMIN</h2>
+        <div class="table-container">
+            <h2>Available Courses</h2>
+            <table>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td><a href="#">course 1</a></td>
+                    <td class="edit"><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                    <td class="delete"><a href="#"><i class="fas fa-times"></i></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">course 2</a></td>
+                    <td class="edit"><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                    <td class="delete"><a href="#"><i class="fas fa-times"></i></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Software Testing</a></td>
+                    <td class="edit"><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+                    <td class="delete"><a href="#"><i class="fas fa-times"></i></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="add-course">
+            <button>Add New Course</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</body>
+</html>
